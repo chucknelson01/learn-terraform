@@ -21,7 +21,7 @@ resource "random_id" "bucket_prefix" {
 
 
 provider "google" {
-  project = "engaged-hook-440719-g4"
+  project = "test-project-for-ase-387518"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
@@ -31,7 +31,7 @@ module "project_services" {
   source  = "terraform-google-modules/project-factory/google//modules/project_services"
   version = "3.3.0"
 
-  project_id = "engaged-hook-440719-g4"
+  project_id = "test-project-for-ase-387518"
 
   activate_apis = [
     "compute.googleapis.com",
